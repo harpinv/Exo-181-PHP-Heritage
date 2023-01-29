@@ -11,6 +11,7 @@ class Personnage {
     protected $nom;
     protected $x;
     protected $y;
+    protected $vie = 50;
 
     // Constructeur de ma classe permettant de définir des valeurs par défaut lorsqu'elle est instanciée
     public function __construct() {
@@ -43,5 +44,13 @@ class Personnage {
     // Getter permettant de retourner l'attribut protégé nom
     public function getNom() {
         return $this->nom;
+    }
+
+    /**
+     * @return int
+     */
+    public function getVie(): int
+    {
+        return $this->vie;
     }
 } 
